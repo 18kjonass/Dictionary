@@ -29,7 +29,7 @@ for char in sentence:
         else:
             chars[char]=1
 print(chars)
-'''
+
 #h
 
 vowels = 'aeiouAEIOU'
@@ -42,4 +42,5 @@ for char in sentence:
     else:
         chars['consonants']=chars.get('consonants',0) + 1
 print(chars)
-
+'''
+#i rember split 
