@@ -18,14 +18,28 @@
 #.get it dos give the value and dos not end the code if there is not value
 
 #g
-
+'''
 vowels = 'aeiouAEIOU'
 sentence = input("Enter a sentence: ")
 chars={}
 for char in sentence:
     if char in vowels:
         if char in chars:
-            chars["vowel"]=chars["vowel"]+1
+            chars[char]=chars[char]+1
         else:
-            chars["vowel"]=1
+            chars[char]=1
 print(chars)
+'''
+#h
+
+vowels = 'aeiouAEIOU'
+sentence = input("Enter a sentence: ")
+chars={}
+for char in sentence:
+    
+    if char in vowels:
+            chars['vowels']=chars.get('vowels',0) + 1
+    else:
+        chars['consonants']=chars.get('consonants',0) + 1
+print(chars)
+
